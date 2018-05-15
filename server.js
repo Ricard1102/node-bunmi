@@ -65,9 +65,21 @@ app.get('/', (req, res) => {
 
 
       //Contact Variables
-      businessPhone: '000 333 999'
+      businessPhone: '000 333 999',
 
-
+      //lightbox.hbs variables
+      galleryimg1: 'public/img/Charlie_2.jpg', //first url image of the fallery i.e. public/img/sts1.jpg
+      galleryimg2: 'public/img/Charlie_4.jpg',
+      galleryimg3: 'public/img/Charlie_5.jpg',
+      galleryimg4: 'public/img/Charlie_7.jpg',
+      galleryimgalt1: 'First photo title', //first alt
+      galleryimgalt2: 'Second photo title',
+      galleryimgalt3: '3rd photo title',
+      galleryalt4: '4th photo title',
+      photoNum1: '1/4',
+      photoNum2: '2/4',
+      photoNum3: '3/4',
+      photoNum4: '4/4'
 
 
     });

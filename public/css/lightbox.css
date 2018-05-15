@@ -1,0 +1,165 @@
+
+  #lightbox1 * {
+    box-sizing: border-box;
+  }
+
+  #lightbox1 .row>.column {
+    padding: 0 8px;
+  }
+
+  #lightbox1 .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #lightbox .photoholder{
+    padding: 1px 1px;
+    margin: 1px 0;
+  }
+
+  #lightbox1 .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* The Modal (background) */
+
+  #lightbox1 .modal {
+    display: none;
+    position: fixed;
+    z-index: 110000;
+    padding-top: 60px;
+    padding-bottom:30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 1;
+  }
+
+  /* Modal Content */
+
+  #lightbox1 .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 400px; /*change also on .mySlides img*/
+    max-height: 300px;
+    /* max-width: 600px; it must match .mySlides img max-width */
+  
+  }
+
+  /* The Close Button */
+
+  #lightbox1 .close {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  #lightbox1 .close:hover,
+  #lightbox1 .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #lightbox1 .mySlides {
+    display: none;
+  }
+
+  #lightbox1 .cursor {
+    cursor: pointer
+  }
+
+
+  .mySlides img{
+   height: 400px;
+   max-width:400px;
+   width: 100%;
+
+  
+  }
+
+
+  /* Next & previous buttons */
+
+  #lightbox1 .prev,
+  #lightbox1 .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+
+  #lightbox1 .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  #lightbox1 .prev:hover,
+  #lightbox1 .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+
+  #lightbox1 .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  #lightbox1 img {
+    margin-bottom: -4px;
+  }
+
+  #lightbox1 .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  #lightbox1 .demo {
+    opacity: 0.6;
+  }
+
+  #lightbox1 .active,
+  #lightbox1 .demo:hover {
+    opacity: 1;
+  }
+
+  #lightbox1 img.hover-shadow {
+    transition: 0.3s;
+    
+    
+  }
+
+  #lightbox1 .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.03);
+  }

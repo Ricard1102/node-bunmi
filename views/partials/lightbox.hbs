@@ -1,0 +1,74 @@
+ {{!-- js config on public/js/lightbox.js --}} {{!-- css config on public/css/lightbox.css --}}
+
+
+<section id="lightbox1">
+
+
+
+  <div class="row">
+    <div class="col-xs-3 col-md-3">
+
+      <img src="{{galleryimg1}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <img src="{{galleryimg2}}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <img src="{{galleryimg3}}" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <img src="{{galleryimg4}}" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div id="lightbox-modal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">{{photoNum1}}</div>
+        <img src="{{galleryimg1}}" style="">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">{{photoNum2}}</div>
+        <img src="{{galleryimg2}}" style="">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">{{photoNum3}}</div>
+        <img src="{{galleryimg3}}" style="">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">{{photoNum4}}</div>
+        <img src="{{galleryimg4}}" style="">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="{{galleryimg1}}" style="width:100%" onclick="currentSlide(1)" alt="{{galleryimgalt1}}">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="{{galleryimg2}}" style="width:100%" onclick="currentSlide(2)" alt="{{galleryimgalt2}}">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="{{galleryimg3}}" style="width:100%" onclick="currentSlide(3)" alt="{{galleryimgalt3}}">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="{{galleryimg4}}" style="width:100%" onclick="currentSlide(4)" alt="{{galleryimgalt4}}">
+      </div>
+    </div>
+  </div>
+
+
+</section>
