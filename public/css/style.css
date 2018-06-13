@@ -40,6 +40,7 @@ body {
 .fa{
   margin: 0px 8px;
   font-size: 24px;
+  
 }
 
 a {
@@ -180,7 +181,10 @@ h6 {
   /* background: rgba(223, 37, 223, 0.322); THIS IS THE ORIGINAL ONE */
   /* background: rgba(204, 109, 198, 0.685); */
   /* background: rgba(168, 37, 185, 0.623); */
-  background: linear-gradient( rgba(249, 206, 255, 0.623), rgba(168, 37, 185, 0.623)) ;
+  /* background: linear-gradient( rgba(249, 206, 255, 0.623), rgba(168, 37, 185, 0.623)) ; */
+  background: linear-gradient(rgba(20, 30, 48, 0.4),rgba(36, 59, 85, 0.4));
+
+
   
   /* background: rgba(241, 227, 241, 0.3);*/
   /*background: rgba(171, 50, 241, 0.8);*/
@@ -587,7 +591,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: rgba(250, 250, 122, 0.45);
+  /* background: rgba(250, 250, 122, 0.45); */
+  /* background:#5BB5FF; */
+  background: linear-gradient(to bottom right,rgba(0, 33, 94, 0.767),rgba(19, 124, 245, 0.685));
   padding: 80px 0;
 }
 
@@ -663,13 +669,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-title {
-  color: #333;
+  color: white;
   font-weight: 700;
   font-size: 28px;
   margin: 20px 0;
 }
 
 #about .about-text {
+  color:rgb(207, 207, 207);
   line-height: 26px;
   text-align: justify;
 }
@@ -681,14 +688,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: linear-gradient(
-    rgba(132, 179, 3, 0.7) ,
-      rgba(232, 243, 84, 0.5) /* rgba(133, 27, 143, 0.3),
+  background: linear-gradient(rgba(0, 19, 61, 0.7) ,
+  rgba(44, 108, 145, 0.5)
+     /* rgba(133, 27, 143, 0.3),
       rgba(168, 168, 168, 0.7)*/), url(../img/home.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
   width: 100%;
 
+
+  /* rgba(132, 179, 3, 0.7) ,
+      rgba(232, 243, 84, 0.5) */
 }
 
 @media (max-width: 600px)
@@ -697,8 +707,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     
     width: 100%;
     max-width: 420px;
-    background: linear-gradient(rgba(132, 179, 3, 0.7) ,
+    /* background: linear-gradient(rgba(132, 179, 3, 0.7) ,
+      rgba(232, 243, 84, 0.5) */
+
+      background: linear-gradient(rgba(0, 19, 61, 0.7) ,
       rgba(232, 243, 84, 0.5)
+
         /* rgba(133, 27, 143, 0.3),
      rgba(168, 168, 168, 0.7)*/)/*, url(../img/IMG_9644.JPG) fixed center center;
     background-size: cover;
@@ -744,7 +758,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-title a {
   /*color: #111;*/
-  color: rgb(179, 19, 144);
+  color: rgb(32, 218, 218);
 }
 
 #services .service-description {
@@ -753,6 +767,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: justify;
   /*margin-left: 80px;*/
   line-height: 24px;
+  color: whitesmoke;
 }
 
 #services .cancellation{
@@ -768,7 +783,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .section-title{
-  color: white;
+  color: whitesmoke;
 }
 
 #services .section-description{
@@ -1001,7 +1016,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: rgba(201, 36, 192, 0.2);
+  /* background: rgba(201, 36, 192, 0.2); */
+  background: white;
   /*background: #f7f7f7;*/
   padding: 80px 0;
 }
@@ -1013,6 +1029,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .info i {
   font-size: 32px;
   color: #03c4eb;
+
   float: left;
 }
 
@@ -1023,8 +1040,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact i {
   font-size: 30px;
-  color: #03c4eb;
-  
+  /* color: #03c4eb; */
+  color: #111;
   height: 50px;
   width: 60px;
 
@@ -1102,7 +1119,7 @@ vertical-align: middle;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #111;
+  background: rgb(46, 46, 46);
   padding: 30px 0;
   color: #fff;
 }
@@ -1130,16 +1147,16 @@ vertical-align: middle;
 }
 
 .box {
-  background: rgb(255, 255, 255);
+  background: rgb(16, 1, 82,0.8);
   padding: 30px 0 2px 4px;
   min-height: 360px;
-  border-radius: 6px;
+  border-radius: 4px;
   /* -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5); */
-  -webkit-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
-  -moz-box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
-  box-shadow: 0px 11px 20px -6px rgba(102,102,102,1);
+  -webkit-box-shadow: 0px 5px 10px -3px rgb(54, 54, 54);
+  -moz-box-shadow: 0px 5px 10px -3px rgb(54, 54, 54);
+  box-shadow: 0px 5px 10px -3px rgb(54, 54, 54);
   overflow-y: scroll;
 }
 
@@ -1180,21 +1197,21 @@ vertical-align: middle;
 --------------------------------------------------------------*/
 
 .btn-collapse {
-  background: rgba(179, 19, 144, 0.6);
+  background: rgb(32, 218, 218);
   
   /* color: rgb(179, 19, 144); */
   /* border: 2px solid rgba(179, 19, 144,0.8); */
   color: #fff;
-  box-shadow: 0 0 0 0 rgba(179, 19, 144,0.6);
+  box-shadow: 0 0 0 0 rgb(32, 218, 218);
   min-width: 200px;
 margin-top:3px;
 margin-bottom: 5px;
 }
 
 .btn-collapse:hover {
-  background: pink;
+  background: transparent;
   /* border: 2px solid pink; */
-  color: rgba(179, 19, 144, 0.6);
+  color: rgb(32, 218, 218);
 
 }
 .pulse{
@@ -1229,4 +1246,15 @@ select{
   min-width: 100%;
   padding: 2px 0;
   height: 32px;
+}
+
+
+
+.price{
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.price-holder{
+  color: rgb(55, 195, 230);
 }
